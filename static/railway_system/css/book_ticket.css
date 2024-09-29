@@ -1,0 +1,14 @@
+form label {
+    margin-top: 40px;
+}
+
+form input {
+    width: 600px;
+    height: 35px;
+    font-size: 20px;
+}
+
+form button {
+    margin-top: 10px;
+    width: 600px;
+}

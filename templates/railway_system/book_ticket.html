@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Забронювати квиток</title>
+<link rel="stylesheet" href="{% static 'railway_system/css/book_ticket.css' %}">
+{% endblock %}
+
+{% block body %}
+<form method="post" class="text-center">
+    {% csrf_token %}
+    <label for="{{ form.first_name.id_for_label }}">Ім'я</label><br>
+    {{ form.first_name }}<br>
+    <label for="{{ form.last_name.id_for_label }}">Прізвище</label><br>
+    {{ form.last_name }}<br>
+    <label for="{{ form.phone_number.id_for_label }}">Номер телефона</label><br>
+    {{ form.phone_number }}<br>
+    <label for="{{ form.email.id_for_label }}">Ел. пошта</label><br>
+    {{ form.email }}<br>
+    <button class="btn btn-success" type="submit">Забронювати</button>
+</form>
+{% endblock %}

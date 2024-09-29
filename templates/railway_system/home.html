@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Головна сторінка</title>
+<link rel="stylesheet" href="{% static 'railway_system/css/home.css' %}">
+{% endblock %}
+
+{% block body %}
+<ul>
+    <li>Маршрут</li>
+    <li>Дата від'їзду</li>
+    <li>Дата прибуття</li>
+    <li>Вартість квитка</li>
+    <li>Квитків залишилось</li>
+</ul>
+    {% for timetable in timetables %}
+        <div class="bg-info text-white">
+            <h5 class="route">{{ timetable.route }}</h5>
+            <h5 class="depature_date">{{ timetable.depature_date }}</h5>
+            <h5 class="date_of_arrival">{{ timetable.date_of_arrival }}</h5>
+            <h5 class="price_of_ticket">{{ timetable.price_of_ticket }} грн</h5>
+            <h5 class="total_tickets">{{ timetable.total_tickets }}</h5>
+        </div>
+        <a href="{{ timetable.get_absolute_url }}"><button class="btn btn-primary">Забронювати квиток</button></a>
+    {% endfor %}
+{% endblock %}
