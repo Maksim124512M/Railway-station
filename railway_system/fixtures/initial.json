@@ -1,0 +1,81 @@
+[
+    {
+        "model": "railway_system.timetable",
+        "pk": 1,
+        "fields": {
+            "route": "Київ - Львів",
+            "depature_date": "2024-09-29T06:43:27Z",
+            "date_of_arrival": "2024-09-30T07:13:32Z",
+            "price_of_ticket": 200,
+            "total_tickets": 27,
+            "date_of_appointment": "2024-09-29"
+        }
+    },
+    {
+        "model": "railway_system.timetable",
+        "pk": 2,
+        "fields": {
+            "route": "Київ - Харків",
+            "depature_date": "2024-09-29T07:03:22Z",
+            "date_of_arrival": "2024-09-29T07:03:22Z",
+            "price_of_ticket": 400,
+            "total_tickets": 30,
+            "date_of_appointment": "2024-09-29"
+        }
+    },
+    {
+        "model": "railway_system.bookticket",
+        "pk": 1,
+        "fields": {
+            "table": 1,
+            "first_name": "Максим",
+            "last_name": "Максим",
+            "phone_number": "Максим",
+            "email": "max1996az@gmail.com"
+        }
+    },
+    {
+        "model": "railway_system.bookticket",
+        "pk": 2,
+        "fields": {
+            "table": 1,
+            "first_name": "asdf@",
+            "last_name": "asdf@",
+            "phone_number": "asdf@",
+            "email": "max1996az@gmail.com"
+        }
+    },
+    {
+        "model": "railway_system.bookticket",
+        "pk": 3,
+        "fields": {
+            "table": 1,
+            "first_name": "asdf@sd",
+            "last_name": "asdf@sd",
+            "phone_number": "asdf@sd",
+            "email": "max1996az@gmail.com"
+        }
+    },
+    {
+        "model": "railway_system.bookticket",
+        "pk": 4,
+        "fields": {
+            "table": 1,
+            "first_name": "dsg",
+            "last_name": "sadf",
+            "phone_number": "sadf",
+            "email": "max1996az@gmail.com"
+        }
+    },
+    {
+        "model": "railway_system.bookticket",
+        "pk": 5,
+        "fields": {
+            "table": 1,
+            "first_name": "sadf",
+            "last_name": "dsaf",
+            "phone_number": "sdfa",
+            "email": "max1996az@gmail.com"
+        }
+    }
+]
